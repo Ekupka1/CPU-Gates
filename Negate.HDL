@@ -1,0 +1,12 @@
+// Ethan Kupka Negate Negate
+
+CHIP Negate{
+
+IN in,sel;
+OUT out;
+
+PARTS:
+Not(in=in,out=notIn);
+Mux(a=notIn, b= sel,out=out);
+
+}

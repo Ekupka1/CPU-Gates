@@ -1,0 +1,12 @@
+// Ethan Kupka Zero Gate
+
+CHIP Zero{
+
+IN in,sel;
+OUT out;
+
+PARTS:
+Not(in=in, out=notIn);
+And(a=in, b=notIn, out=out1);
+Mux(a=in, b=out1, sel=sel, out=out);
+}

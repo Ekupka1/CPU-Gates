@@ -1,0 +1,13 @@
+CHIP Eq{
+
+IN a,b;
+OUT out;
+
+PARTS:
+Not(in=a,out=notA);
+Not(in=b,out=notB);
+And(a=a,b=b,out=line1);
+And(a=notA,b=notB,out=line2);
+Or(a=line1,b=line2,out=out);
+
+}

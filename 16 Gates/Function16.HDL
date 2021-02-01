@@ -1,0 +1,13 @@
+//Ethan Kupka Function16
+
+CHIP Function16{
+
+IN a[16], b[16], sel;
+OUT out[16];
+
+PARTS:
+FullAdder16(a=a, b=b, out=out0);
+And16(a=a, b=b, out=out1);
+Mux16(a=out0, b=out1, sel= sel, out=out);
+
+}

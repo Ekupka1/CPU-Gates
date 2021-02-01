@@ -1,0 +1,13 @@
+// Ethan Kupka FullAdder Gate
+
+CHIP FullAdder{
+
+IN a, b, c;
+OUT carry, out;
+
+PARTS:
+HalfAdder(a=a, b=b, carry=Carry1, out=Sum1);
+HalfAdder(a=c, b=Sum1, carry= Carry2, out=out);
+Or(a=Carry1, b= Carry2, out=carry);
+
+}

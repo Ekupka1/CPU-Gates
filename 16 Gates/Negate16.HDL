@@ -1,0 +1,26 @@
+//Ethan Kupka Negate16
+
+CHIP Negate16{
+
+IN in[16],sel;
+OUT out[16];
+
+PARTS:
+Negate(in=in[15],out=out[15],sel=sel);
+Negate(in=in[14],out=out[14],sel=sel);
+Negate(in=in[13],out=out[13],sel=sel);
+Negate(in=in[12],out=out[12],sel=sel);
+Negate(in=in[11],out=out[11],sel=sel);
+Negate(in=in[10],out=out[10],sel=sel);
+Negate(in=in[9],out=out[9],sel=sel);
+Negate(in=in[8],out=out[8],sel=sel);
+Negate(in=in[7],out=out[7],sel=sel);
+Negate(in=in[6],out=out[6],sel=sel);
+Negate(in=in[5],out=out[5],sel=sel);
+Negate(in=in[4],out=out[4],sel=sel);
+Negate(in=in[3],out=out[3],sel=sel);
+Negate(in=in[2],out=out[2],sel=sel);
+Negate(in=in[1],out=out[1],sel=sel);
+Negate(in=in[0],out=out[0],sel=sel);
+
+}
